@@ -20,17 +20,18 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
         binding.tv01.text = "😱"
-        movemove()
+
         binding.button01.setOnClickListener{
+            binding.tv01.text = "👾"
             movemove()
         }
 
     }
     fun movemove(){
-        var moving = TranslateAnimation(-100f,100f,0f,0f)
-        moving.duration = 200// 20ミリ秒)かけて行う
+        var moving = TranslateAnimation(-10f,10f,-10f,10f)
+        moving.duration = 10// 20ミリ秒)かけて行う
         binding.tv01.animation = moving // ビューにアニメーションを適用する
         moving.repeatMode= Animation.REVERSE
-        moving.repeatCount = 50
+        moving.repeatCount = 5
     }
 }
