@@ -24,8 +24,8 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun movemove(){
-        var moving = TranslateAnimation(-200f,200f,0f,0f)
-        moving.duration = 2000// 20ミリ秒)かけて行う
+        var moving = TranslateAnimation(-10f,10f,0f,0f)
+        moving.duration = 20// 20ミリ秒)かけて行う
         binding.tv01.animation = moving // ビューにアニメーションを適用する
         moving.repeatMode= Animation.REVERSE
         moving.repeatCount = 50
