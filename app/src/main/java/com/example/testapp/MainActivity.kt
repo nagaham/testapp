@@ -20,9 +20,11 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
         binding.tv01.text = "😱"
+        movemove()
         binding.button01.setOnClickListener{
             movemove()
         }
+
     }
     fun movemove(){
         var moving = TranslateAnimation(-100f,100f,0f,0f)
