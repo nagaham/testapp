@@ -32,6 +32,6 @@ class MainActivity : AppCompatActivity() {
         moving.duration = 10// 20ミリ秒)かけて行う
         binding.tv01.animation = moving // ビューにアニメーションを適用する
         moving.repeatMode= Animation.REVERSE
-        moving.repeatCount = 5
+        moving.repeatCount = 20
     }
 }
