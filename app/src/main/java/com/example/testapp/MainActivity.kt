@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         moving.repeatCount = 20
     }
     fun moverotate(){
-        var moving = RotateAnimation(0.0f, 360.0f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f)
+        var moving = RotateAnimation(-90.0f, 90.0f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 3f)
         moving.duration = 1000// ミリ秒)かけて行う
         binding.tv01.animation = moving // ビューにアニメーションを適用する
         moving.repeatMode= Animation.REVERSE
